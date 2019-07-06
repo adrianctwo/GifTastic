@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    var topics = ["Pikachu", "Squirtle", "Charizard", "Eevee", "Gengar", "Bulbasaur", "Lucario", "Mewtwo", "Mew", "Sceptile", "Vaporeon", "Mudkip", "Lapras", "Jigglypuff", "Charmander", "Flaafy"];
+    var topics = ["Pikachu", "Squirtle", "Charizard", "Eevee", "Gengar", "Mewtwo", "Mew", "Lapras", "Jigglypuff", "Charmander", "Flaafy"];
     var results;
     function createButtons() {
         $("#gifs-buttons").empty();
