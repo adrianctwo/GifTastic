@@ -29,7 +29,7 @@ $(document).ready(function(){
     createButtons();
 
     function dataPull () {
-        var pokemon = $(this).attr("data").toLowerCase();
+        var pokemon = $(this).attr("data");
         console.log(pokemon);
         var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + pokemon + "&api_key=GSNMky4kJUiFFYrqfhjUqS79OW529dXb&limit=10";
 
