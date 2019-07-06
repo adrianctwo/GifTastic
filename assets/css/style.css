@@ -53,13 +53,6 @@ h1 {
     text-align: center;
 }
 
-.animateGIF {
-    margin: 0px;
-    padding: 20px;
-    font-size: 30px;
-    text-align: center;
-}
-
 footer {
     background: url(../images/footer.jpg) center center no-repeat;
     height: 400px;
