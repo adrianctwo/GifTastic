@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    var topics = ["Squirtle", "Charizard", "Eevee", "Gengar", "Mewtwo", "Mew", "Lapras", "Jigglypuff", "Charmander", "Flaafy", "Pikachu"];
+    var topics = ["Squirtle", "Charizard", "Eevee", "Gengar", "Mewtwo", "Mew", "Lapras", "Jigglypuff", "Charmander", "Flaafy",];
     var results;
     function createButtons() {
         $("#gifs-buttons").empty();
@@ -29,8 +29,9 @@ $(document).ready(function(){
     createButtons();
 
     function dataPull () {
-        var pokemon = $(this).attr("data");
-        var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + pokemon.toLowerCase() + "&api_key=GSNMky4kJUiFFYrqfhjUqS79OW529dXb&limit=10";
+        var pokemon = $(this).attr("data").toLowerCase();
+        console.log(pokemon);
+        var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + pokemon + "&api_key=GSNMky4kJUiFFYrqfhjUqS79OW529dXb&limit=10";
 
         $.ajax({
             url: queryURL,
