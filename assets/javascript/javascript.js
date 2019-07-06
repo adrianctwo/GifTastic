@@ -13,6 +13,11 @@ $(document).ready(function(){
         }
     }
 
-
     createButtons();
+
+    function gifs () {
+        var pokemon = $(this).attr("data");
+        var queryURL = "api.giphy.com/v1/gifs/search" + pokemon + "&api_key=GSNMky4kJUiFFYrqfhjUqS79OW529dXb&limit=10";
+        
+    }
 })
