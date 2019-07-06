@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    var topics = ["Pikechu", "Squirtle"];
+    var topics = ["Pikachu", "Squirtle"];
     var results;
     function createButtons() {
         $("#gifs-buttons").empty();
