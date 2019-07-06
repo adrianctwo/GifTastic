@@ -13,11 +13,24 @@ $(document).ready(function(){
         }
     }
 
+    $("#add-pokemon").on("click", function(event){
+        event.preventDefault();
+
+        var pokemonName = $("#pokemon-input").val().trim();
+
+        topics.push(pokemonName);
+        $("#pokemon-input").val("");
+
+
+        createButtons();
+
+        console.log(topics);
+    })
     createButtons();
 
-    function gifs () {
+    function dataPull () {
         var pokemon = $(this).attr("data");
-        var queryURL = "api.giphy.com/v1/gifs/search?q=" + pokemon + "&api_key=GSNMky4kJUiFFYrqfhjUqS79OW529dXb&limit=10";
+        var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + pokemon + "&api_key=GSNMky4kJUiFFYrqfhjUqS79OW529dXb&limit=10";
 
         $.ajax({
             url: queryURL,
@@ -50,7 +63,7 @@ $(document).ready(function(){
         })
     }
 
-    $(document).on("click", ".pokemon-btn", gifs);
+    $(document).on("click", ".pokemon-btn", dataPull);
 
 
 })
