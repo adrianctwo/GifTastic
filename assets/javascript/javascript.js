@@ -33,9 +33,24 @@ $(document).ready(function(){
                 var pokemonDiv = $("<div>");
                 var p = $("<p class 'rating'>").text("Rating:" + results[i].rating);
                 var pokemonImage = $("<img>");
+
+                p.addClass("ratings");
+
+                pokemonImage.addClass("image-gifs")
+                pokemonImage.attr("src", results[i].images.fixed_height_still.url);
+                pokemonImage.attr("data-state", "still");
+                pokemonImage.attr("data-position", i);
+
+                pokemonDiv.append(p);
+                pokemonDiv.append(pokemonImage);
+                pokemonDiv.addClass("gif");
+
+                $("#gifs").prepend(pokemonDiv);
             }
-
-
         })
     }
+
+    $(document).on("click", ".pokemon-btn", gifs);
+
+
 })
