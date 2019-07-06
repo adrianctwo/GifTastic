@@ -25,6 +25,17 @@ $(document).ready(function(){
         }).done(function(response){
             console.log(queryURL);
             console.log(response);
+
+            var results = response.data;
+
+            $("#gifs").empty();
+            for(var i = 0; i < results.length; i++) {
+                var pokemonDiv = $("<div>");
+                var p = $("<p class 'rating'>").text("Rating:" + results[i].rating);
+                var pokemonImage = $("<img>");
+            }
+
+
         })
     }
 })
