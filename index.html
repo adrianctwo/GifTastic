@@ -13,17 +13,30 @@
 </head>
 
 <body>
-    <h1>Pokemon</h1>
-    <div id="gifs-buttons">
+    <header>
+        <div class="logo">
+            <h1>Pokemon</h1>
+        </div>
+    </header>
+    <div class="container">
+        <p class="instructions">Click on a button or add your own Pokemon (Click on a GIF for animated version)</p>
+        <div id="gifs-buttons"></div>
+        <form id="pokemon">
+            <label for="pokemon-input" class="input-label">Add Pokemon: </label>
+            <input type="text" placeholder="Type a pokemon" id="pokemon-input">
+            <input id="add-pokemon" type="submit" value="submit">
+        </form>
+        <div class="row">
+            <div class="col-md-12">
+                <div id="gifs"></div>
+            </div>
+        </div>
     </div>
-    <div id="gifs">
-    </div>
-
-    <form id="pokemon">
-        <label for="pokemon-input" class="input-label">Add Pokemon: </label>
-        <input type="text" placeholder="Type a pokemon" id="pokemon-input">
-        <input id="add-pokemon" type="submit" value="submit">
-    </form>
+    <footer class= "mastfoot mt-auto">
+            <div class="footers">
+                <p>Copyright @ Adrian Situ</p>
+            </div>    
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

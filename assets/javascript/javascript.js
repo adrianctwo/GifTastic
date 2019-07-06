@@ -1,6 +1,6 @@
 $(document).ready(function(){
-    var topics = ["Pikechu", "squirtle"];
-
+    var topics = ["Pikechu", "Squirtle"];
+    var results;
     function createButtons() {
         $("#gifs-buttons").empty();
         for(i = 0; i < topics.length; i++) {
@@ -39,7 +39,7 @@ $(document).ready(function(){
             console.log(queryURL);
             console.log(response);
 
-            var results = response.data;
+            results = response.data;
 
             $("#gifs").empty();
             for(var i = 0; i < results.length; i++) {
@@ -65,5 +65,19 @@ $(document).ready(function(){
 
     $(document).on("click", ".pokemon-btn", dataPull);
 
+    function animate() {
+        var state = $(this).attr("data-state");
+        var position = $(this).attr("data-position");
+        position = parseInt(position);
 
+        if (state === "still") {
+            $(this).attr("src", results[position].images.fixed_height.url);
+            $(this).attr("data-state", "animate");
+        } else {
+            $(this).attr("src", results[position].images.fixed_height_still.url);
+            $(this).attr("data-state", "still");
+        }
+    };
+
+    $(document).on("click", ".image-gifs", animate)
 })

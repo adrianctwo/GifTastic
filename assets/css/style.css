@@ -1,0 +1,66 @@
+header {
+    background: url(../images/footer.jpg) center center no-repeat;
+    width: 100%;
+    height: 400px;
+}
+
+.gif {
+    float: left;
+    padding: 10px;
+}
+
+.container {
+    position: center;
+}
+
+.ratings {
+    margin: 0px;
+    padding-bottom: 5px;
+}
+
+#pokemon {
+    padding: 10px;
+}
+
+#gifs-buttons {
+    padding: 10px;
+}
+
+.pokemon-btn {
+    padding-right: 10px;
+    margin-right: 10px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 90px;
+    padding-top: 10%;
+    color: black;
+}
+
+.footers {
+    text-align: center;
+    font-size: 30px;
+    padding-top: 15%;
+    color:black;
+
+}
+
+.instructions {
+    margin: 0px;
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.animateGIF {
+    margin: 0px;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+footer {
+    background: url(../images/footer.jpg) center center no-repeat;
+    height: 400px;
+}
