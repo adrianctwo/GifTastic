@@ -1,4 +1,4 @@
-![PokeGif](assets/images/PokeGif_Home.PNG)
+![PokeGif](assets/images/PokeGif Home.PNG)
 
 # PokeGif
 PokeGif is a web-application for user to find Pokemon or other user input gifs.
